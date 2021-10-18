@@ -1,0 +1,55 @@
+﻿<Window x:Class="GridPanel_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GridPanel_2"
+        mc:Ignorable="d"
+        Title="GridPanel_2" Height="800" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="829*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="MsgBox" Content="MsgBox" Grid.Row="0" Grid.Column="0" Margin="2,2,2,2"
+                Grid.RowSpan="2" Click="MsgBox_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="ButtonZ" Content="Zmien Tekst" Grid.Column="1" Margin="2,0,2,0" Click="ButtonZ_Click" Height="20" VerticalAlignment="Center">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="buttonTPZ" Content="Tekst Przed Zmianą" Grid.Row="0" Grid.Column="2" Margin="2,2,2,2" Click="buttonTPZ_Click" Grid.ColumnSpan="2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btna" Content="Aktywuj" Grid.Row="1" Grid.Column="1" Margin="2,2,2,2" Click="btna_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnat" Content="Dezaktywny" Grid.Row="1" Grid.Column="2" Margin="2,2,2,2" IsEnabled="False" Grid.ColumnSpan="2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="button6" Content="Czas" Grid.Row="2" Grid.Column="0" Margin="2,2,2,2"
+                Grid.ColumnSpan="4" MouseEnter="Button6_MouseEnter" MouseLeave="button6_MouseLeave">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>
